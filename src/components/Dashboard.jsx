@@ -1,5 +1,7 @@
 import BuyerProfileChart from "./BuyerProfileChart";
 import DashboardStatsGrid from "./DashboardStatsGrid";
+import RecentOrders from "./RecentOrders";
+import PopularProducts from "./PopularProducts.jsx";
 import TransactionChart from "./TransactionChart";
 
 const Dashboard = () => {
@@ -10,6 +12,10 @@ const Dashboard = () => {
 
         <TransactionChart />
         <BuyerProfileChart />
+      </div>
+      <div className="flex flex-row gap-4 w-full">
+        <RecentOrders />
+        <PopularProducts />
       </div>
     </div>
   );
