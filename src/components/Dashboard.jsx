@@ -1,9 +1,11 @@
 import DashboardStatsGrid from "./DashboardStatsGrid";
+import TransactionChart from "./TransactionChart";
 
 const Dashboard = () => {
   return (
-    <div className="flex gap-4">
+    <div className="flex flex-col gap-4 m-4">
       <DashboardStatsGrid />
+      <TransactionChart />
     </div>
   );
 };
